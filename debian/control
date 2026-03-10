@@ -1,0 +1,14 @@
+Source: patchlens
+Section: utils
+Priority: optional
+Maintainer: patch-lens contributors <opensource@example.com>
+Build-Depends: debhelper-compat (= 13), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: patchlens
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Linux update scanner for APT, Flatpak, and Snap
+ patchlens scans system package sources and reports pending updates
+ in summary and detailed modes.
